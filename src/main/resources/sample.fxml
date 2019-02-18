@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="459.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Label layoutX="61.0" layoutY="45.0" text="From" />
+        <Label layoutX="61.0" layoutY="90.0" text="To" />
+        <TextField fx:id="from" layoutX="111.0" layoutY="41.0" />
+        <TextField fx:id="save" layoutX="111.0" layoutY="86.0" />
+        <Button fx:id="loadBrowse" layoutX="273.0" layoutY="41.0" mnemonicParsing="false" onAction="#fromBrowse" text="Browse" />
+        <Button fx:id="saveBrowse" layoutX="273.0" layoutY="86.0" mnemonicParsing="false" onAction="#saveBrowse" text="Browse" />
+        <Button fx:id="Run" layoutX="255.0" layoutY="162.0" mnemonicParsing="false" onAction="#Run" text="Run" />
+        <CheckBox fx:id="stemming" layoutX="111.0" layoutY="131.0" mnemonicParsing="false" text="Stemming" />
+        <Button fx:id="Reset" layoutX="63.0" layoutY="214.0" mnemonicParsing="false" onAction="#reset" text="Reset" />
+        <Button fx:id="ShowDictionary" layoutX="135.0" layoutY="214.0" mnemonicParsing="false" onAction="#printDIc" text="Show Dictionary" />
+        <Button fx:id="LoadDictionary" layoutX="260.0" layoutY="214.0" mnemonicParsing="false" onAction="#loadDictionary" text="Load Dictionary" />
+        <ChoiceBox fx:id="language" layoutX="60.0" layoutY="162.0" prefWidth="150.0" visible="false" />
+      <Button fx:id="btnQueries" layoutX="133.0" layoutY="271.0" mnemonicParsing="false" onAction="#runPartTwo" text="Answer queries" />
+      <Label fx:id="type" layoutX="34.0" layoutY="339.0" text="type querie" visible="false" />
+      <Label fx:id="file" layoutX="34.0" layoutY="373.0" text="choose querie" visible="false" />
+      <Label fx:id="city" layoutX="33.0" layoutY="414.0" text="Select Represantative City" visible="false" />
+      <TextField fx:id="txtTypeQuerie" layoutX="112.0" layoutY="335.0" visible="false" />
+      <TextField fx:id="QuerieFile" layoutX="112.0" layoutY="369.0" visible="false" />
+      <CheckBox fx:id="checkSemantic" layoutX="32.0" layoutY="499.0" mnemonicParsing="false" text="Semantic" visible="false" />
+      <CheckBox fx:id="checkEntity" layoutX="32.0" layoutY="549.0" mnemonicParsing="false" text="Entity" visible="false" />
+      <Button fx:id="browseQuery" layoutX="275.0" layoutY="369.0" mnemonicParsing="false" onAction="#fromQuery" text="Browse" visible="false" />
+      <Button fx:id="btnRunQueries" layoutX="184.0" layoutY="583.0" mnemonicParsing="false" onAction="#runQueries" text="Run" visible="false" />
+      <Label fx:id="lblToQuerieResult" layoutX="34.0" layoutY="459.0" text="To queries results" visible="false" />
+      <TextField fx:id="folderToQueryResult" layoutX="151.0" layoutY="454.0" visible="false" />
+      <Button fx:id="btnFolderForQueriesResult" layoutX="318.0" layoutY="453.0" mnemonicParsing="false" onAction="#toQuery" text="Browse" visible="false" />
+      <MenuButton fx:id="cityChooser" layoutX="203.0" layoutY="410.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Choose City" visible="false">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+    </children>
+</AnchorPane>
